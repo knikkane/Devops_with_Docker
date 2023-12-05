@@ -134,11 +134,47 @@ Secret message is: 'You can find the source code here: https://github.com/docker
 
 ## 1.7: IMAGE FOR SCRIPT 
 
+Exercise can be found from  [Here](Exercise1_7/README.md)
+
+## 1.8: TWO LINE DOCKERFILE
+
+Exercise can be found from  [Here](Exercise1_8/README.md)
+
+## 1.9: VOLUMES
+Start the container with bind mount so that the logs are created into your filesystem
+
 ```shell
+~$ touch text.log
+~$ docker run -d -v $(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
+5ffb3f7f6b46e5fc619ff08b9686dcf8e0247ef05ee9b68576d78a9ed3fcc251
+~$ cat text.log 
+2023-12-05 12:10:37 +0000 UTC
+2023-12-05 12:10:39 +0000 UTC
+2023-12-05 12:10:41 +0000 UTC
+2023-12-05 12:10:43 +0000 UTC
+2023-12-05 12:10:45 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
 
 ```
 
-## 1.7:
-
+## 1.10: PORTS OPEN
+Docker file from [Exercise 1.8](Exercise1_8/Dockerfile)
 ```shell
+~$ docker run -p 8080:8080 web-server
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+
 ```
+```shell
+~$ curl http://localhost:8080
+{"message":"You connected to the following path: /","path":"/"}
+```
+
+
+
