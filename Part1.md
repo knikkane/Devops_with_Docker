@@ -94,13 +94,9 @@ Test inputting helsinki.fi into the application
 ```shell
 ~$ docker run -d -it --name website ubuntu /bin/bash
 ~$ docker exec -d -it website /bin/bash -c 'apt update; apt install -y curl; exec "$BASH"'
-~$ docker exec -it website /bin/bash -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
 ```
 
 ```shell
-~$ docker run -d -it --name website ubuntu /bin/bash
-1321526e2ea1ff2a11cd49105d96e26ee7e67308c67d9fa80482dfbef30bc143
-~$ docker exec -d -it website /bin/bash -c 'apt update; apt install -y curl; exec "$BASH"'
 ~$ docker exec -it website /bin/bash -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
 Input website:
 helsinki.fi
@@ -124,6 +120,7 @@ devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   2 years ago   83MB
 devopsdockeruh/simple-web-service   alpine    fd312adc88e0   2 years ago   15.7MB
 ```
 
+## 1.6: HELLO DOCKER HUB
 Go inside the alpine container and make sure the secret message functionality is the same.
 
 ```shell
@@ -135,9 +132,10 @@ Secret message is: 'You can find the source code here: https://github.com/docker
 2023-12-03 17:22:47 +0000 UTC
 ```
 
-## 1.6:
+## 1.7: IMAGE FOR SCRIPT 
 
 ```shell
+
 ```
 
 ## 1.7:
