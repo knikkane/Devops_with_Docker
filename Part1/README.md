@@ -176,5 +176,25 @@ Docker file from [Exercise 1.8](Exercise1_8/Dockerfile)
 {"message":"You connected to the following path: /","path":"/"}
 ```
 
+## 1.11: SPRING 
+
+Exercise can be found from  [Here](Exercise1_11/README.md)
+
+## 1.12: HELLO, FRONTEND!
+
+Exercise can be found from  [Here](Exercise1_12/README.md)
+
+## 1.13: HELLO, BACKEND!
+
+Exercise can be found from  [Here](Exercise1_13/README.md)
+
+## 1.14: ENVIRONMENT
+
+Exercise can be found from  [Here](Exercise1_14/README.md)
+
+## 1.15: 
+
+## 1.16:
+
 
 
