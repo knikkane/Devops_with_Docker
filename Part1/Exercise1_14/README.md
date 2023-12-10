@@ -1,0 +1,6 @@
+```shell
+~$ docker build . -t backend-project && docker run -p 8080:8080 backend-project
+```
+```shell
+~$ docker build . -t frontend-project && docker run -p 5000:5000 frontend-project
+```
