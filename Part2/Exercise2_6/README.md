@@ -8,3 +8,4 @@
 ```shell
 ~$ docker compose up
 ```
+<img src=Screenshot_devops_with_dock_p02_e26.png width="60%">
