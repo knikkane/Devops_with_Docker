@@ -19,3 +19,4 @@ Task is to scale the compute containers so that the button in the application tu
 ```shell
 ~$ docker compose up --scale compute=3
 ```
+<img src=Screenshot_devops_with_dock_p02_e25.png width="60%">
